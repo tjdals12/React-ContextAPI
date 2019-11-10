@@ -1,0 +1,15 @@
+.TodoItem {
+    &.done {
+        color: #999999;
+    }
+
+    .text {
+        cursor: pointer;
+    }
+
+    .remove {
+        cursor: pointer;
+        color: red;
+        margin-left: 10px;
+    }
+}

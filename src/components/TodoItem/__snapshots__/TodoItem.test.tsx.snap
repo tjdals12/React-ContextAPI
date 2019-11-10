@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoItem /> matches snapshot 1`] = `
+<div>
+  <li
+    class="TodoItem "
+  >
+    <span
+      class="text"
+    >
+      Something
+    </span>
+    <span
+      class="remove"
+    >
+      (X)
+    </span>
+  </li>
+</div>
+`;
