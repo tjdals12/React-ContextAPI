@@ -1,21 +1,14 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import TodoItem from 'components/TodoItem';
+import { useTodosState } from 'contexts/TodosContext';
 import styles from './TodoList.scss';
 
 const cx = classNames.bind(styles);
 
-type Todo = {
-    id: number;
-    text: string;
-    done: boolean;
-};
+function TodoList(): JSX.Element {
+    const todos = useTodosState();
 
-type TodoListProps = {
-    todos: Todo[];
-};
-
-function TodoList({ todos }: TodoListProps): JSX.Element {
     return (
         <ul className={cx('TodoList')}>
             {todos.map(todo => (

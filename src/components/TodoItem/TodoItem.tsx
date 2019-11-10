@@ -1,20 +1,27 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import { Todo, useTodosDispatch } from 'contexts/TodosContext';
 import styles from './TodoItem.scss';
 
 const cx = classNames.bind(styles);
 
 type TodoItemProps = {
-    todo: { id: number; text: string; done: boolean };
+    todo: Todo;
 };
 
 function TodoItem({ todo }: TodoItemProps): JSX.Element {
+    const dispatch = useTodosDispatch();
+
     return (
         <li className={cx(`TodoItem ${todo.done ? 'done' : ''}`)}>
-            <span className={cx('text')}>{todo.text}</span>
-            <span className={cx('remove')}>(X)</span>
+            <span className={cx('text')} onClick={(): void => dispatch({ type: 'TOGGLE_TODO', id: todo.id })}>
+                {todo.text}
+            </span>
+            <span className={cx('remove')} onClick={(): void => dispatch({ type: 'REMOVE_TODO', id: todo.id })}>
+                (X)
+            </span>
         </li>
     );
 }
 
-export default TodoItem;
+export default React.memo(TodoItem);
