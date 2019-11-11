@@ -1,6 +1,6 @@
 # React-ContextAPI
 
-## **_1. createContext_**: Context 객체를 만듬.
+## **1. createContext**: Context 객체를 만듬.
 
 📎 _MyContext.tsx_
 
