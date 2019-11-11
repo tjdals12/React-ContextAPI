@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames/bind';
-import { useTodosDispatch } from 'contexts/TodosContext';
+import { useTodosDispatch } from 'contexts/Todos/TodosContext';
 import styles from './TodoInput.scss';
 
 const cx = classNames.bind(styles);

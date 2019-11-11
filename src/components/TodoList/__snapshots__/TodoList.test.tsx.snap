@@ -4,6 +4,49 @@ exports[`<TodoList /> matches snapshot 1`] = `
 <div>
   <ul
     class="TodoList"
-  />
+  >
+    <li
+      class="TodoItem done"
+    >
+      <span
+        class="text"
+      >
+        Something 1
+      </span>
+      <span
+        class="remove"
+      >
+        (X)
+      </span>
+    </li>
+    <li
+      class="TodoItem done"
+    >
+      <span
+        class="text"
+      >
+        Something 2
+      </span>
+      <span
+        class="remove"
+      >
+        (X)
+      </span>
+    </li>
+    <li
+      class="TodoItem "
+    >
+      <span
+        class="text"
+      >
+        Something 3
+      </span>
+      <span
+        class="remove"
+      >
+        (X)
+      </span>
+    </li>
+  </ul>
 </div>
 `;

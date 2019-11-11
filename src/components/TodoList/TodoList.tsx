@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import TodoItem from 'components/TodoItem';
-import { useTodosState } from 'contexts/TodosContext';
+import { useTodosState } from 'contexts/Todos/TodosContext';
 import styles from './TodoList.scss';
 
 const cx = classNames.bind(styles);

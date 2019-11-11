@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoInput from 'components/TodoInput';
 import TodoList from 'components/TodoList';
-import TodosContextProvier from 'contexts/TodosContext';
+import TodosContextProvier from 'contexts/Todos/TodosContext';
 
 const App: React.FC = () => {
     return (

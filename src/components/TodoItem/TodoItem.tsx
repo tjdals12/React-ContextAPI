@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import { Todo, useTodosDispatch } from 'contexts/TodosContext';
+import { Todo } from 'contexts/Todos/types';
+import { useTodosDispatch } from 'contexts/Todos/TodosContext';
 import styles from './TodoItem.scss';
 
 const cx = classNames.bind(styles);
